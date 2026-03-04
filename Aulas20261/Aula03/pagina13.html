@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 13</title>
+    <script src="scripts13.js"></script>
+  </head>
+
+  <body>
+    <h1>Calculadora</h1>
+
+    <form>
+      <fieldset>
+        <legend>Dados para Calcular</legend>
+
+        <p>
+          <input type="text" id="n1" size="5" autofocus>
+          <input type="text" id="n2" size="5">
+        </p>
+
+        <hr>
+        <input type="button" value=" + " onclick="somar()">
+        <input type="button" value=" - " onclick="subtrair()">
+        <input type="button" value=" x " onclick="multiplicar()">
+        <input type="button" value=" : " onclick="dividir()">
+        <input type="button" value=" MOD " onclick="restar()">
+        <input type="button" value=" EXP " onclick="elevar()">
+        <input type="button" value=" RQ1 " onclick="enraizar1()">
+        <input type="button" value=" RQ2 " onclick="enraizar2()">
+        <hr>
+
+        <p><label for="resultado">Resultado:</label>
+          <output id="resultado"></output>
+        </p>
+      </fieldset>
+    </form>
+   </body>
+</html>
