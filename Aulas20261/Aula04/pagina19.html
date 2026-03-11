@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 19</title>
+  </head>
+
+  <body>
+    <h1>Raízes, Arredondamento e &pi;</h1>  
+
+    <script>
+      let n = Number(prompt('Digite um número:', ''))
+
+      let rq = Math.sqrt(n)
+      let rc = Math.cbrt(n)
+    </script>
+
+    <p>Raiz Quadrada: <script>document.write(rq)</script></p>
+    <p>Raiz Cúbica: <script>document.write(rc)</script></p>
+
+    <h2>Arredondamento Para Mais Próximo</h2>
+
+    <p>Raiz Quadrada: <script>document.write(Math.round(rq))</script></p>
+    <p>Raiz Cúbica: <script>document.write(Math.round(rc))</script></p>
+
+    <h2>Arredondamento Para Cima</h2>
+
+    <p>Raiz Quadrada: <script>document.write(Math.ceil(rq))</script></p>
+    <p>Raiz Cúbica: <script>document.write(Math.ceil(rc))</script></p>
+
+    <h2>Arredondamento Para Baixo</h2>
+
+    <p>Raiz Quadrada: <script>document.write(Math.floor(rq))</script></p>
+    <p>Raiz Cúbica: <script>document.write(Math.floor(rc))</script></p>
+
+    <h2>Valor do &pi;</h2>
+
+    <p>O &pi; vale <script>document.write(Math.PI)</script></p>
+  </body>
+</html>

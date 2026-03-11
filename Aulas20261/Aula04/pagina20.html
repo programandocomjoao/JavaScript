@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 20</title>
+    <script src="scripts20.js"></script>
+  </head>
+
+  <body>
+    <h1>Cálculo de Bolas Esportivas</h1>  
+
+    <form>
+      <fieldset>
+        <legend>Dados da Bola</legend>
+
+        <p><label for="raio">RAIO DA BOLA:</label>
+          <input type="text" id="raio" size="5" autofocus>
+        </p>
+
+        <hr>
+        <p><input type="button" value="CALCULAR" onclick="calcularComp(); calcularArea(); calcularVol()"></p>
+        <hr>
+
+        <p><label for="c">Comprimento:</label>
+          <output id="c"></output>cm
+        </p>
+
+        <p><label for="a">Área:</label>
+          <output id="a"></output>cm<sup>2</sup>
+        </p>
+
+        <p><label for="v">Volume:</label>
+          <output id="v"></output>cm<sup>3</sup>
+        </p>
+      </fieldset>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 17</title>
+  </head>
+
+  <body>
+    <h1>Game da Adivinhação</h1>  
+
+    <script>
+      let r = 0
+      let n
+
+      alert('Pense em um número de 1 a 10')
+      n = Math.round(Math.random() * 9 + 1)
+      r += n
+
+      alert(`Some o número pensado com ${n}`)
+      n = Math.round(Math.random() * 9 + 1)
+      r += n
+
+      alert(`Some o resultado com ${n}`)
+      alert('Subtraia o número que você pensou!')
+      n = Math.round(Math.random() * 9 + 1)
+      r += n
+
+      alert(`Some o resultado com ${n}`)
+
+      if(confirm(`O resultado é ${r}?`))
+        document.write('<p>Adivinhei o seu pensamento!')
+      else
+        document.write('Você calculou errado!')
+    </script>
+
+    <hr>
+    <input type="button" value="Jogar Novamente" onclick="location.reload()">
+  </body>
+</html>
