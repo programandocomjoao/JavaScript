@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 27</title>
+  </head>
+
+  <body>
+    <h1>Seleção Composta com Bloco de Código</h1>
+
+    <script>
+      let media = Number(prompt('Digite a média final:', ''))
+
+      if(media >= 6) {
+        document.write(`<p>O aluno com média ${media} está aprovado.</p>`)
+        document.write(`<p>O aluno está com ${(media-6).toFixed(2)} pontos acima da média.</p>`)
+      }
+      else {
+        document.write(`<p>O aluno com média ${media} está reprovado.</p>`)
+        document.write(`<p>O aluno está com ${(6-media).toFixed(2)} pontos abaixo da média.</p>`)
+      }
+    </script>
+  </body>
+</html>

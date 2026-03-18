@@ -1,1 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 21</title>
+  </head>
 
+  <body>
+    <h1>Máximo e Mínimo</h1>
+
+    <script>
+      let n = new Array(5)
+
+      for(let i = 0; i < 5; i++)
+        n[i] = Number(prompt('Digite um número:', ''))
+    </script>
+
+    <p>Maior valor: <script>document.write(Math.max(...n))</script></p>
+    <p>Menor valor: <script>document.write(Math.min(...n))</script></p>
+  </body>
+</html>

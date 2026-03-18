@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 23</title>
+  </head>
+
+  <body>
+    <h1>Game Dado da Sorte</h1>
+
+    <hr>
+    <h2>Dado Sorteado</h2>
+    <img src="dado1.png" id="dadosorteado">
+
+    <hr>
+    <p>
+      <input type="button" value="Jogar o Dado" onclick="rodarDado()">
+      <input type="button" value="Parar o Dado" onclick="pararDado()">
+    </p>
+
+    <img src="dado1.png" id="dadojogado">
+
+    <hr>
+    <p>
+      Acertos: <input type="text" id="acertos" size="5" value="0">
+      Erros: <input type="text" id="erros" size="5" value="0">
+      <input type="button" value="Jogar Novamente" onclick="location.reload()">
+    </p>
+
+    <script>
+      let dados = ['dado1.png','dado2.png','dado3.png','dado4.png','dado5.png','dado6.png']
+      let lado = Math.round(Math.random() * 5)
+      document.getElementById('dadosorteado').src = dados[lado]
+      let i = 0
+      let acertos = 0
+      let erros = 0
+
+      jogarDado = function() {
+        document.getElementById('dadojogado').src = dados[i]
+        i++
+
+        if(i == 6)
+          i = 0
+      }
+
+      rodarDado = function() {
+        game = setInterval('jogarDado()', 100)
+      }
+
+      pararDado = function() {
+        clearInterval(game)
+
+        if(lado == i-1) {
+          alert('Parabéns!!! Acertou!!!')
+          acertos++
+          document.getElementById('acertos').value = acertos
+        }
+        else {
+          alert('Que pena!!! Você errou!!!')
+          erros++
+          document.getElementById('erros').value = erros
+        }
+      }
+    </script>
+  </body>
+</html>
