@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 28</title>
+    <script src="scripts28.js"></script>
+  </head>
 
+  <body>
+    <h1>Validador de Triângulo</h1>  
+
+    <form>
+      <fieldset>
+        <legend>Dados do Triângulo</legend>
+
+        <p><label for="A">Lado A:</label>
+          <input type="text" id="A" size="5" autofocus>
+        </p>
+
+        <p><label for="B">Lado B:</label>
+          <input type="text" id="B" size="5">
+        </p>
+
+        <p><label for="C">Lado C:</label>
+          <input type="text" id="C" size="5">
+        </p>
+
+        <hr>
+        <p><input type="button" value="Verificar Triângulo" onclick="verificarTriangulo()"></p>
+        <hr>
+
+        <p><output id="resultado"></output></p>
+        <p><img src="" id="triangulo" style="height: 203px"></p>
+      </fieldset>
+    </form>
+  </body>
+</html>

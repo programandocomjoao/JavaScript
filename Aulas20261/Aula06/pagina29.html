@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 29</title>
+  </head>
+
+  <body>
+    <h1>Estrutura de Seleção de Múltipla Escolha</h1>  
+
+    <script>
+      let data = new Date()
+
+      let dias = data.getDay()
+      let diam = data.getDate()
+      let mes = data.getMonth()+1
+      let ano = data.getFullYear()
+
+      document.write(`<p>Data: ${diam}/${mes}/${ano}</p>`)
+
+      switch(dias) {
+        case 0: document.write(`<p>Hoje é domingo</p>`); break
+        case 1: document.write(`<p>Hoje é segunda-feira</p>`); break
+        case 2: document.write(`<p>Hoje é terça-feira</p>`); break
+        case 3: document.write(`<p>Hoje é quarta-feira</p>`); break
+        case 4: document.write(`<p>Hoje é quinta-feira</p>`); break
+        case 5: document.write(`<p>Hoje é sexta-feira</p>`); break
+        case 6: document.write(`<p>Hoje é sábado</p>`); break
+      }
+    </script>
+  </body>
+</html>
