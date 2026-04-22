@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 31</title>
+  </head>
+
+  <body>
+    <h1>Estrutura de Seleção Ternária</h1>
+
+    <script>
+      let nome = prompt('Digite o nome do funcionário:', '')
+      let sal = Number(prompt('Digite o salário: R$', ''))
+
+      let desc = (sal < 1500)? sal * 0.03 : sal * 0.05
+    </script>
+
+    <p><script>document.write(`O funcionário ${nome} será descontado em R$ ${desc.toFixed(2)}`)</script></p>
+  </body>
+</html>

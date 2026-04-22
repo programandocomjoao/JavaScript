@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 32</title>
+  </head>
+
+  <body>
+    <h1>Estrutura de Repetição FOR</h1>
+
+    <script>
+      let preco, soma = 0
+
+      for(let i = 1; i <= 10; i++) {
+        preco = Number(prompt(`Digite o preço do ${i}º produto: R$ `, ''))
+        soma += preco
+      }
+    </script>
+
+    <p><script>document.write(`A soma dos preços é R$ ${soma.toFixed(2)}`)</script></p>
+  </body>
+</html>

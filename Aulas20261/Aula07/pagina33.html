@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 33</title>
+    <script src="scripts30.js"></script>
+  </head>
+
+  <body>
+    <h1>Campeões da Copa do Mundo</h1>  
+
+    <form>
+      <fieldset>
+        <legend>Dados da Copa</legend>
+
+        <p><label for="ano">Ano da Copa do Mundo:</label>
+          <select id="ano">
+          <script>
+            for(let i = 1930; i <= 2022; i += 4)
+              if(i != 1942 && i != 1946)
+                document.write(`<option value="${i}"> ${i} </option>`)
+          </script>  
+          </select>
+        </p>
+
+        <hr>
+        <p><input type="button" value="Mostrar País" onclick="mostrarPais()"></p>
+        <hr>
+
+        <p><output id="pais"></output></p>
+        <p><img src="" id="bandeira" style="height: 80px"></p>
+      </fieldset>
+    </form>
+  </body>
+</html>

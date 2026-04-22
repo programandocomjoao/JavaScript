@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 35</title>
+  </head>
+
+  <body>
+    <h1>Estrutura de Repetição WHILE</h1>
+
+    <script>
+      let preco, soma = 0
+      let resposta = true
+      let cont = 1
+
+      while(resposta) {
+        preco = Number(prompt(`Digite o preço do ${cont}º produto: R$ `, ''))
+        soma += preco
+        cont++
+
+        resposta = confirm('Deseja continua?')
+      }
+    </script>
+
+    <p><script>document.write(`A soma dos preços é R$ ${soma.toFixed(2)}`)</script></p>
+  </body>
+</html>
