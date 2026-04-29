@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 39</title>
+    <script src="funcoesMat.js"></script>
+  </head>
+
+  <body>
+    <h1>Cálculo do Quadrado</h1>
+
+    <form>
+      <fieldset>
+        <legend>Dados para Calcular</legend>
+
+        <p><label for="numero">Número:</label>
+          <input type="text" id="numero" size="5" autofocus>
+        </p>
+
+        <hr>
+        <input type="button" value="Calcular Quadrado" onclick="
+          let num = document.getElementById('numero').value
+          document.getElementById('resultado').value = calcularQuadrado(num)
+        ">
+        <hr>
+
+        <p><label for="resultado">Quadrado:</label>
+          <output id="resultado"></output>
+        </p>
+      </fieldset>
+    </form>
+  </body>
+</html>

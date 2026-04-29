@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página 41</title>
+    <title>Página 40</title>
     <script src="funcoesMat.js"></script>
   </head>
 
   <body>
-    <h1>Cálculo de Bhaskara</h1>
+    <h1>Cálculo do Delta</h1>
 
     <form>
       <fieldset>
@@ -27,27 +27,17 @@
         </p>
 
         <hr>
-        <input type="button" value="Calcular Bhaskara" onclick="
+        <input type="button" value="Calcular Delta" onclick="
           let A = Number(document.getElementById('A').value)
           let B = Number(document.getElementById('B').value)
           let C = Number(document.getElementById('C').value)
 
           document.getElementById('resultado').value = calcularDelta(A, B, C)
-          document.getElementById('resultado1').value = calcularX1(A, B, C)
-          document.getElementById('resultado2').value = calcularX2(A, B, C)
         ">
         <hr>
 
         <p><label for="resultado">Delta:</label>
           <output id="resultado"></output>
-        </p>
-
-        <p><label for="resultado1">X':</label>
-          <output id="resultado1"></output>
-        </p>
-
-        <p><label for="resultado2">X'':</label>
-          <output id="resultado2"></output>
         </p>
       </fieldset>
     </form>
