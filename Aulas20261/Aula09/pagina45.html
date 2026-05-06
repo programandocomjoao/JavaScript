@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+  <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 45</title>
+  </head>
+
+  <body>
+    <h1>Manipulação de Arrays</h1>  
+
+    <script>
+      mostrarHora = function() {
+        let data = new Date()
+
+        let sem = data.getDay()
+        let dia = data.getDate()
+        let mes = data.getMonth() + 1
+        let ano = data.getFullYear()
+        let hora = data.getHours()
+        let min = data.getMinutes()
+        let seg = data.getSeconds()
+
+        if(dia < 10) dia = '0' + dia
+        if(mes < 10) mes = '0' + mes
+        if(hora < 10) hora = '0' + hora
+        if(min < 10) min = '0' + min
+        if(seg < 10) seg = '0' + seg
+
+        let dias = new Array('domingo', 'segunda-feira', 'terça-feira', 'quarta-feira', 'quinta-feira', 'sexta-feira', 'sábado')
+
+        document.getElementById('p1').innerText = `Hoje é ${dia}/${mes}/${ano}`
+        document.getElementById('p2').innerText = `Dia da semana ${dias[sem]}`
+        document.getElementById('p3').innerText = `No momento são ${hora}:${min}:${seg}`
+      }
+
+      setInterval(mostrarHora, 1000)
+    </script>
+
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+  </body>
+</html>

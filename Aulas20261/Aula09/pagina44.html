@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+  <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 44</title>
+  </head>
+
+  <body>
+    <h1>Manipulação de Arrays</h1>  
+
+    <script>
+      let nomes = new Array(7)
+
+      for(let i = 0; i < nomes.length; i++)
+        nomes[i] = prompt(`Digite um nome para posição ${i}:`, '')
+      
+      document.write(`<p>Tamanho do array: ${nomes.length} posições</p>`)
+    </script>
+
+    <h2>Valores Iniciais do Vetor</h2>
+
+    <ul>
+      <script>
+        for(let i = 0; i < nomes.length; i++)
+          document.write(`<li>Posição ${i}: ${nomes[i]}</li>`)
+      </script>
+    </ul>
+
+    <h2>Valores Invertidos no Vetor</h2>
+
+    <ul>
+      <script>
+        nomes.reverse()
+
+        for(let i = 0; i < nomes.length; i++)
+          document.write(`<li>Posição ${i}: ${nomes[i]}</li>`)
+      </script>
+    </ul>
+
+    <h2>Valores Ordenados no Vetor</h2>
+
+    <ul>
+      <script>
+        nomes.sort()
+
+        for(let i = 0; i < nomes.length; i++)
+          document.write(`<li>Posição ${i}: ${nomes[i]}</li>`)
+      </script>
+    </ul>
+  </body>
+</html>

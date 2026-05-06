@@ -3,20 +3,17 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página 42</title>
+    <title>Página 43</title>
   </head>
 
   <body>
     <h1>Manipulação de Arrays</h1>  
 
     <script>
-      let numeros = new Array(5)
+      let numeros = new Array(10)
 
-      numeros[0] = 17
-      numeros[1] = 79
-      numeros[2] = 26
-      numeros[3] = 68
-      numeros[4] = 42
+      for(let i = 0; i < numeros.length; i++)
+        numeros[i] = Number(prompt(`Digite um número para posição ${i}:`, ''))
       
       document.write(`<p>Tamanho do array: ${numeros.length} posições</p>`)
     </script>
@@ -25,11 +22,6 @@
 
     <ul>
       <script>
-        //document.write(`<li>Posição 0: ${numeros[0]}</li>`)
-        //document.write(`<li>Posição 1: ${numeros[1]}</li>`)
-        //document.write(`<li>Posição 2: ${numeros[2]}</li>`)
-        //document.write(`<li>Posição 3: ${numeros[3]}</li>`)
-        //document.write(`<li>Posição 4: ${numeros[4]}</li>`)
         for(let i = 0; i < numeros.length; i++)
           document.write(`<li>Posição ${i}: ${numeros[i]}</li>`)
       </script>
@@ -50,7 +42,7 @@
 
     <ul>
       <script>
-        numeros.sort()
+        numeros.sort((a, b) => a - b)
 
         for(let i = 0; i < numeros.length; i++)
           document.write(`<li>Posição ${i}: ${numeros[i]}</li>`)
