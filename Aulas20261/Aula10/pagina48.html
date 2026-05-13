@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página 50</title>
+    <title>Página 48</title>
   </head>
 
   <body>
@@ -15,19 +15,21 @@
       numeros[0] = new Array(3)
       numeros[1] = new Array(3)
 
-      for(let i = 0; i < numeros.length; i++)
-        for(let j = 0; j < numeros[i].length; j++)
-          numeros[i][j] = Number(prompt(`Digite um número:`, ''))
+      numeros[0][0] = 5
+      numeros[0][1] = 13
+      numeros[0][2] = 25
+      numeros[1][0] = 68
+      numeros[1][1] = 70
+      numeros[1][2] = 79
     </script>
 
     <table border>
       <script>
         for(let i = 0; i < numeros.length; i++) {
           document.write('<tr>')
-
-          for(let j = 0; j < numeros[i].length; j++)
-            document.write(`<td>${numeros[i][j]}</td>`)
-
+          document.write(`<td>${numeros[i][0]}</td>`)
+          document.write(`<td>${numeros[i][1]}</td>`)
+          document.write(`<td>${numeros[i][2]}</td>`)
           document.write('</tr>')
         }
       </script>

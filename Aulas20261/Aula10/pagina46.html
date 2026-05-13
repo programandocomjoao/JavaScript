@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 46</title>
+  </head>
+
+  <body>
+    <h1>Piada do Momento</h1>
+    
+    <script>
+      let piadas = new Array(5)
+
+      piadas[0] = 'Meu computador é tão lento que ele não tem mouse, tem turtle.'
+      piadas[1] = 'Minha internet é tão lenta que eu fiz uma pesquisa no Google e o resultado chegou pelo correio.'
+      piadas[2] = 'A capacidade de armazenamento do meu celular é tão baixa que a memória dele tem Alzheimer.'
+      piadas[3] = 'O que é um Terapeuta? São 1024 Gigapeutas.'
+      piadas[4] = 'Por que o computador foi preso? Porque ele executou um programa.'
+
+      let p = Math.round(Math.random() * 4)
+    </script>
+
+    <p>A piada do momento é: <strong><script>document.write(piadas[p])</script></strong></p>
+  </body>
+</html>

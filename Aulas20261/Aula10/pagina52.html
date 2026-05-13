@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 52</title>
+  </head>
+
+  <body>
+    <h1>DOM (Document Object Model)</h1>
+    
+    <script>
+      mudarFundo = function(cor) {
+        let corpo = document.body
+        corpo.style.backgroundColor = cor
+      }
+    </script>
+
+    <p><label for="cor">Escolha uma cor para o fundo:</label>
+      <input type="color" onchange="mudarFundo(this.value)">
+    </p>
+  </body>
+</html>
