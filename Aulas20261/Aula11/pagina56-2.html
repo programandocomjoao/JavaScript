@@ -37,11 +37,8 @@
           <option value="50px">Sim</option>
         </select>
 
-        <label for="largura">Largura da Imagem:</label>
-        <input type="range" id="largura" min="192" max="1920" value="960" oninput="redimensionar(this.value)">
-
-        <label for="altura">Altura da Imagem:</label>
-        <input type="range" id="altura" min="74" max="744" value="372" oninput="redimensionar2(this.value)">
+        <label for="tamanho">Tamanho da Imagem:</label>
+        <input type="range" id="tamanho" min="10" max="100" value="50" oninput="redimensionar(this.value)">
 
         <input type="button" value="Formatar" onclick="
           let c = document.getElementById('cor').value
@@ -80,12 +77,9 @@
         }
       }
 
-      redimensionar = function(l) {
-        document.getElementById('logo').style.width = `${l}px`
-      }
-
-      redimensionar2 = function(a) {
-        document.getElementById('logo').style.height = `${a}px`
+      redimensionar = function(t) {
+        document.getElementById('logo').style.width = `${t}%`
+        document.getElementById('logo').style.height = `${t}%`
       }
     </script>
   </body>
