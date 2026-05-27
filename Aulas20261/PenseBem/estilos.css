@@ -40,3 +40,26 @@ input#tela2 {
   font-size: 15pt;
   font-weight: bold;
 }
+
+input.botao {
+  width: 45%;
+  height: 100px;
+  border: black 1px solid;
+  border-radius: 5px;
+  font-size: 24pt;
+  color: white;
+}
+
+input#botaoA { background-color: red; }
+input#botaoB { background-color: yellow; }
+input#botaoC { background-color: blue; }
+input#botaoD { background-color: green; }
+
+input#botaoStart {
+  width: 90%;
+  height: 30px;
+  border: black 1px solid;
+  border-radius: 5px;
+  background-color: white;
+  font-size: 11pt;
+}
