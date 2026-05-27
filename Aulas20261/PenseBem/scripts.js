@@ -36,3 +36,7 @@ iniciar = function() {
   document.getElementById('tela1').value = `${programa}->${pergunta}:`
   document.getElementById('tela2').value = `Tentativa ${tentativa} de 3`
 }
+
+jogar = function(resposta) {
+  document.getElementById('tela1').value = `${programa}->${pergunta}:${resposta}`
+}
