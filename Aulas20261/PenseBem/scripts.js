@@ -66,4 +66,9 @@ jogar = function(resposta) {
 
   document.getElementById('tela1').value = `${programa}->${pergunta}:${resposta}`
   document.getElementById('tela2').value = `Tentativa ${tentativa} de 3`
+
+  if(pergunta > 5) {
+    document.getElementById('tela1').value = '***FIM***'
+    document.getElementById('tela2').value = `Pontuação: ${pontuacao}`
+  }
 }
