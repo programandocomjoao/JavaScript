@@ -39,4 +39,24 @@ iniciar = function() {
 
 jogar = function(resposta) {
   document.getElementById('tela1').value = `${programa}->${pergunta}:${resposta}`
+
+  if(resposta == gabarito[pergunta-1]) {
+    document.getElementById('tela2').style.border = 'green 3px solid'
+
+    if(tentativa == 1)
+      pontuacao += 3
+    else if(tentativa == 2)
+      pontuacao += 2
+    else if(tentativa == 3)
+      pontuacao++
+
+    pergunta++
+    tentativa = 1
+  }
+  else {
+    document.getElementById('tela2').style.border = 'red 3px solid'
+  }
+
+  document.getElementById('tela1').value = `${programa}->${pergunta}:${resposta}`
+  document.getElementById('tela2').value = `Tentativa ${tentativa} de 3`
 }
