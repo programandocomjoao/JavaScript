@@ -55,6 +55,13 @@ jogar = function(resposta) {
   }
   else {
     document.getElementById('tela2').style.border = 'red 3px solid'
+
+    tentativa++
+
+    if(tentativa > 3) {
+      pergunta++
+      tentativa = 1
+    }
   }
 
   document.getElementById('tela1').value = `${programa}->${pergunta}:${resposta}`
