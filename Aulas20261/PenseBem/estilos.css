@@ -1,0 +1,20 @@
+* {
+  text-align: center;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #cccccc;
+}
+
+div#container {
+  background-color: #eeeebb;
+  width: 90%;
+  max-width: 300px;
+  margin: auto;
+  padding: 10px;
+}
+
+img#logo {
+  width: 50%;
+}
