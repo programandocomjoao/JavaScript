@@ -1,1 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script src="calculadora.js"></script>
+  </head>
 
+  <body>
+    <h1>Calculadora Básica</h1>
+
+    <form>
+      <fieldset>
+        <legend>DADOS PARA CALCULAR</legend>
+
+        <p><label for="n1">Valor 1:</label>
+          <input type="text" id="n1" size="5" autofocus>
+        </p>
+
+        <p><label for="n2">Valor 2:</label>
+          <input type="text" id="n2" size="5">
+        </p>
+
+        <hr>
+        <input type="button" value=" + " onclick="somar()">
+        <input type="button" value=" - " onclick="subtrair()">
+        <input type="button" value=" x " onclick="multiplicar()">
+        <input type="button" value=" : " onclick="dividir()">
+        <button> MOD </button>
+        <button> EXP </button>
+        <button> RQ1 </button>
+        <button> RQ2 </button>
+        <button> C </button>
+        <hr>
+
+        <p><label for="resultado">Resultado:</label>
+          <output id="resultado"></output>
+        </p>
+      </fieldset>
+    </form>
+  </body>
+</html>
