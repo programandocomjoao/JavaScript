@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Bolas</title>
+    <script src="bolas.js"></script>
+  </head>
+
+  <body>
+    <h1>Calculadora de Bolas</h1>
+
+    <form>
+      <fieldset>
+        <legend>DADOS DA BOLA</legend>
+
+        <p><label for="esporte">ESPORTE:</label>
+          <select id="esporte" onchange="definirRaio(this.value)">
+            <option value="">Selecione o Esporte</option>
+            <option value="10.82">Futebol de Campo</option>
+            <option value="9.87">Futsal</option>
+            <option value="11.9">Basquetebol</option>
+            <option value="10.35">Voleibol</option>
+            <option value="3.27">Tênis</option>
+          </select>
+        </p>
+
+        <p><label for="raio">RAIO:</label>
+          <input type="text" id="raio" size="5" autofocus>
+        </p>
+
+        <hr>
+        <input type="button" value="CALCULAR" onclick="calcularC(); calcularA(); calcularV()">
+        <hr>
+
+        <p><label for="c">Comprimento:</label>
+          <output id="c"></output>cm
+        </p>
+
+        <p><label for="a">Área:</label>
+          <output id="a"></output>cm<sup>2</sup>
+        </p>
+
+        <p><label for="v">Volume:</label>
+          <output id="v"></output>cm<sup>3</sup>
+        </p>
+      </fieldset>
+    </form>
+  </body>
+</html>

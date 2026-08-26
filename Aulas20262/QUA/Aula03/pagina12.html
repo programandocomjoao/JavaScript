@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 12</title>
+  </head>
+
+  <body>
+    <h1>Raízes e Arredondamento</h1>
+
+    <script>
+      let n = Number(prompt('Digite um número:', ''))
+
+      let rq = Math.sqrt(n)
+      let rc = Math.cbrt(n)
+
+      document.write(`<p>A raiz quadrada de ${n} é ${rq}</p>`)
+      document.write(`<p>A raiz cúbica de ${n} é ${rc}</p>`)
+    </script>
+
+    <h2>Arredondando para Mais Próximo</h2>
+
+    <script>
+      document.write(`<p>A raiz quadrada de ${n} é ${Math.round(rq)}</p>`)
+      document.write(`<p>A raiz cúbica de ${n} é ${Math.round(rc)}</p>`)
+    </script>
+
+    <h2>Arredondando para Cima</h2>
+
+    <script>
+      document.write(`<p>A raiz quadrada de ${n} é ${Math.ceil(rq)}</p>`)
+      document.write(`<p>A raiz cúbica de ${n} é ${Math.ceil(rc)}</p>`)
+    </script>
+
+    <h2>Arredondando para Baixo</h2>
+
+    <script>
+      document.write(`<p>A raiz quadrada de ${n} é ${Math.floor(rq)}</p>`)
+      document.write(`<p>A raiz cúbica de ${n} é ${Math.floor(rc)}</p>`)
+    </script>
+
+    <h2>Valor Completo do &pi;</h2>
+
+    <script>
+      document.write(`<p>O valor do PI é ${Math.PI}</p>`)
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 13</title>
+  </head>
+
+  <body>
+    <h1>Maior e Menor Valores</h1>
+
+    <script>
+      let n = new Array(5)
+
+      for(let i = 0; i <= 4; i++)
+        n[i] = Number(prompt('Digite um número:',''))
+
+      document.write(`<p>O maior número é ${Math.max(...n)}</p>`)
+      document.write(`<p>O menor número é ${Math.min(...n)}</p>`)
+    </script>
+
+  </body>
+</html>
