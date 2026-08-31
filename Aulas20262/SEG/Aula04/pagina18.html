@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 18</title>
+  </head>
+
+  <body>
+    <h1>Jogo da Adivinhação</h1>  
+
+    <script>
+      let n1 = Math.round(Math.random() * 9 + 1)
+      let n2 = Math.round(Math.random() * 9 + 1)
+      let n3 = Math.round(Math.random() * 9 + 1)
+      let soma = n1 + n2 + n3
+
+      alert('Pense em um número entre 1 e 10:')
+      alert(`Some, mentalmente, esse número com ${n1}:`)
+      alert(`Some, mentalmente, o resultado com ${n2}:`)
+      alert(`Subtraia, mentalmente, o número que você pensou:`)
+      alert(`Some, mentalmente, o resultado com ${n3}:`)
+      
+      let opcao = confirm(`O resultado é ${soma}?`)
+
+      if(opcao)
+        document.write('<p>Adivinhei o seu pensamento!</p>')
+      else
+        document.write('<p>Eu acho que você calculou errado!</p>')
+    </script>
+  </body>
+</html>
