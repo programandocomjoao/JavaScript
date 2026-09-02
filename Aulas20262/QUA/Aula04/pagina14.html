@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 14</title>
+  </head>
+
+  <body>
+    <h1>Números Inteiros e Absolutos</h1>
+
+    <script>
+      let n1 = Number(prompt('Digite um número real:', ''))
+      let n2 = Number(prompt('Digite um número negativo:', ''))
+
+      document.write(`<p>Antes do Trunc: ${n1}</p>`)
+      document.write(`<p>Depois do Trunc: ${Math.trunc(n1)}</p>`)
+      document.write('<hr>')
+      document.write(`<p>Antes do Abs: ${n2}</p>`)
+      document.write(`<p>Depois do Abs: ${Math.abs(n2)}</p>`)
+    </script>
+
+  </body>
+</html>

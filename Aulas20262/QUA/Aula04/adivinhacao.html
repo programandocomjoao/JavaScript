@@ -1,1 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Adivinhação</title>
+  </head>
 
+  <body>
+    <h1>Jogo da Adivinhação</h1>
+
+    <script>
+      let n1 = Math.round(Math.random() * 9 + 1)
+      let n2 = Math.round(Math.random() * 9 + 1)
+      let n3 = Math.round(Math.random() * 9 + 1)
+      let soma = n1 + n2 + n3
+
+      alert(`Pense em um número entre 1 e 10:`)
+      alert(`Some ${n1} ao número pensado:`)
+      alert(`Some ${n2} ao resultado anterior:`)
+      alert(`Subtraia desse resultado o número pensado:`)
+      alert(`Some ${n3} ao resultado anterior:`)
+
+      let resposta = confirm(`O resultado é ${soma}?`)
+
+      if(resposta)
+        document.write('<p>Adivinhei o seu pensamento!</p>')
+      else
+        document.write('<p>Eu acho que você calculou errado!</p>')
+    </script>
+
+  </body>
+</html>
