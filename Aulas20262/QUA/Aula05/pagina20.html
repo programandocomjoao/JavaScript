@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 20</title>
+  </head>
+
+  <body>
+    <h1>Seleção Composta com Bloco de Código</h1>
+
+    <script>
+      let idade = Number(prompt('Digite a idade:', ''))
+
+      if(idade < 18) {
+        document.write('<p>Menor em idade!</p>')
+        var falta = 18 - idade
+        document.write(`<p>Falta(m) ${falta} ano(s) para maioridade!</p>`)
+      }
+      else {
+        document.write('<p>Maior em idade!</p>')
+        var falta = idade - 18
+        document.write(`<p>Já é maior há ${falta} ano(s)!</p>`)
+      }
+
+      document.write(`O valor da variável falta é ${falta}`)
+    </script>
+  </body>
+</html>
