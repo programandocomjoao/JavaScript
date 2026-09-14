@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copas do Mundo</title>
+    <script src="copas.js"></script>
+  </head>
+
+  <body>
+    <h1>Campeões das Copas</h1>
+
+    <form>
+      <fieldset>
+        <legend>DADOS DO COPA</legend>
+
+        <p><label for="ano">Ano da Copa:</label>
+          <input type="number" id="ano" size="5" autofocus min="1930" max="2026" step="4">
+        </p>
+
+        <hr>
+        <p><input type="button" value="Mostrar Seleção" onclick="selecionar()"></p>
+        <hr>
+
+        <p><output id="pais"></output></p>
+        <p><img src="" id="bandeira" style="height: 80px;"></p>
+      </fieldset>
+    </form>
+  </body>
+</html>

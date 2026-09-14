@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 24</title>
+  </head>
+
+  <body>
+    <h1>Seleção Composta Com Bloco de Código</h1>  
+
+    <script>
+      let idade = Number(prompt('Digite a idade:', ''))
+
+      if(idade < 18) {
+        document.write('<p>Menor em idade.</p>')
+        let anos = 18 - idade
+        document.write(`<p>Falta(m) ${anos} ano(s) para alcançar a maioridade.</p>`)  
+      }
+      else {
+        document.write('<p>Maior em idade.</p>')
+        let anos = idade - 18
+        document.write(`<p>Maior em idade há ${anos} ano(s).</p>`)
+      }      
+    </script>
+  </body>
+</html>
