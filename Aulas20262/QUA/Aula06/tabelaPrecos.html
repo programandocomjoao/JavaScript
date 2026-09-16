@@ -1,1 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Preços</title>
+  </head>
 
+  <body>
+    <h1>Tabela de Preços</h1>
+
+    <table border>
+      <tr>
+        <th>Número</th>
+        <th>Descrição</th>
+        <th>Preço</th>
+      </tr>
+
+    <script>
+      let preco, descricao
+      let soma = 0, numero = 1
+      let resposta = true
+
+      do {
+        descricao = prompt('Digite a descrição do produto:', '')
+        preco = Number(prompt(`Digite o preço do produto: R$`, ''))
+        soma += preco
+
+        document.write('<tr>')
+        document.write(`<td>${numero}</td>`)
+        document.write(`<td>${descricao}</td>`)
+        document.write(`<td>R$ ${preco}</td>`)
+        document.write('</tr>')
+
+        numero++
+        resposta = confirm('Deseja continuar?')
+      } while(resposta)
+
+    </script>
+    </table>
+
+    <script>
+      document.write(`<p>A soma dos preços é R$ ${soma.toFixed(2)}</p>`)
+    </script>
+  </body>
+</html>

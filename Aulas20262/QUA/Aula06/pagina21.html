@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 21</title>
+  </head>
+
+  <body>
+    <h1>Estrutura de Seleção Ternária</h1>
+
+    <script>
+      let nome = prompt('Digite o nome:', '')
+      let salario = Number(prompt('Digite o salário: R$', ''))
+
+      let inss = (salario > 1621)? salario * 0.14 : salario * 0.11
+
+      document.write(`<p>O funcionário ${nome} terá um desconto de INSS de R$ ${inss.toFixed(2)}</p>`)
+    </script>
+  </body>
+</html>
