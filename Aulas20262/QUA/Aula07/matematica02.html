@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delta</title>
+    <script src="matematica.js"></script>
+  </head>
+
+  <body>
+    <h1>Cálculo do Delta</h1>
+
+    <form>
+      <fieldset>
+        <legend>DADOS PARA CALCULAR</legend>
+
+        <p><label for="a">Valor de A:</label>
+          <input type="text" id="a" size="5" autofocus>
+        </p>
+
+        <p><label for="b">Valor de B:</label>
+          <input type="text" id="b" size="5">
+        </p>
+
+        <p><label for="c">Valor de C:</label>
+          <input type="text" id="c" size="5">
+        </p>
+
+        <hr>
+        <p><input type="button" value="Calcular Delta" onclick="
+          let a = Number(document.getElementById('a').value)
+          let b = Number(document.getElementById('b').value)
+          let c = Number(document.getElementById('c').value)
+
+          document.getElementById('resultado').value = calcularDelta(a, b, c)
+        "></p>
+        <hr>
+
+        <p><label for="resultado">Delta:</label>
+          <output id="resultado"></output>
+        </p>
+      </fieldset>
+    </form>
+  </body>
+</html>
