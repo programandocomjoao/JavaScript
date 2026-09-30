@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página 27</title>
+    <title>Página 29</title>
   </head>
 
   <body>
@@ -12,11 +12,8 @@
     <script>
       let numeros = new Array(5)
 
-      numeros[0] = 17
-      numeros[1] = 79
-      numeros[2] = 3
-      numeros[3] = 83
-      numeros[4] = 23
+      for(let i = 0; i < numeros.length; i++)
+        numeros[i] = Number(prompt('Digite um número:', ''))
 
       document.write(`<p>Tamanho do array: ${numeros.length}</p>`)
     </script>
