@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova</title>
+    <script src="prova.js"></script>
+  </head>
+
+  <body>
+    <h1>Calculadora de Área</h1>
+
+    <script>
+      let opcao = Number(prompt('Digite a opção<1> a <4>:', ''))
+
+      switch(opcao) {
+        case 1: document.write(`Área: ${calcularQuadrado()}`); break
+        case 2: document.write(`Área: ${calcularRetangulo()}`); break
+        case 3: document.write(`Área: ${calcularTriangulo()}`); break
+        case 4: document.write(`Área: ${calcularTrapezio()}`); break
+        default: alert('Opção Inválida!')
+      }
+    </script>
+  </body>
+</html>

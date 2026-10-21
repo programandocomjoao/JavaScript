@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 34</title>
+  </head>
+
+  <body>
+    <h1>Método getElementsByTagName</h1>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, est iusto neque saepe harum architecto. Doloribus impedit cum corporis neque expedita quae sit. A maxime enim pariatur, perferendis praesentium omnis!</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, est iusto neque saepe harum architecto. Doloribus impedit cum corporis neque expedita quae sit. A maxime enim pariatur, perferendis praesentium omnis!</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, est iusto neque saepe harum architecto. Doloribus impedit cum corporis neque expedita quae sit. A maxime enim pariatur, perferendis praesentium omnis!</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, est iusto neque saepe harum architecto. Doloribus impedit cum corporis neque expedita quae sit. A maxime enim pariatur, perferendis praesentium omnis!</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, est iusto neque saepe harum architecto. Doloribus impedit cum corporis neque expedita quae sit. A maxime enim pariatur, perferendis praesentium omnis!</p>
+
+    <script>
+      let paragrafos = document.getElementsByTagName('p')
+
+      for(let i = 0; i < paragrafos.length; i++) {
+        paragrafos[i].style.fontFamily = 'verdana'
+        paragrafos[i].style.fontSize = '14pt'
+        paragrafos[i].style.color = 'darkblue'
+        paragrafos[i].style.backgroundColor = 'lightblue'
+      }
+    </script>
+  </body>
+</html>

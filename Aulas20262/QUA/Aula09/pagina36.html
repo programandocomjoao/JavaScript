@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 36</title>
+  </head>
+
+  <body onload="definirTema1()">
+    <form>
+      <fieldset>
+        <input type="radio" id="light" value="1" name="tema" checked onclick="definirTema1()">
+        <label for="light">Light Theme</label>
+        <input type="radio" id="dark" value="2" name="tema" onclick="definirTema2()">
+        <label for="dark">Dark Theme</label>
+        |
+        <label for="dimensao">Dimesão da Imagem:</label>
+        <input type="range" id="dimensao" min="10" max="100" value="50" oninput="redimensionar(this.value)">
+      </fieldset>
+    </form>
+
+    <h1>Sonic The Hedgehog</h1>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, est iusto neque saepe harum architecto. Doloribus impedit cum corporis neque expedita quae sit. A maxime enim pariatur, perferendis praesentium omnis!</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, est iusto neque saepe harum architecto. Doloribus impedit cum corporis neque expedita quae sit. A maxime enim pariatur, perferendis praesentium omnis!</p>
+
+    <p><img src="Sonic.png" id="sonic" style="width: 480px; height: 161px;"></p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, est iusto neque saepe harum architecto. Doloribus impedit cum corporis neque expedita quae sit. A maxime enim pariatur, perferendis praesentium omnis!</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, est iusto neque saepe harum architecto. Doloribus impedit cum corporis neque expedita quae sit. A maxime enim pariatur, perferendis praesentium omnis!</p>
+
+    <script>
+      let corpo = document.body
+      let painel = document.getElementsByTagName('fieldset')
+      let titulo = document.getElementsByTagName('h1')
+      let paragrafos = document.getElementsByTagName('p')
+
+      painel[0].style.fontFamily = 'verdana'
+      painel[0].style.backgroundColor = 'white'
+
+      definirTema1 = function() {
+        corpo.style.backgroundColor = 'white'
+
+        titulo[0].style.fontFamily = 'verdana'
+        titulo[0].style.color = 'gray'
+
+        for(let i = 0; i < paragrafos.length; i++) {
+          paragrafos[i].style.fontFamily = 'verdana'
+          paragrafos[i].style.fontSize = '12pt'
+          paragrafos[i].style.color = 'darkblue'
+          paragrafos[i].style.textAlign = 'justify'
+        }
+      }
+
+      definirTema2 = function() {
+        corpo.style.backgroundColor = 'black'
+
+        titulo[0].style.fontFamily = 'verdana'
+        titulo[0].style.color = 'Silver'
+
+        for(let i = 0; i < paragrafos.length; i++) {
+          paragrafos[i].style.fontFamily = 'verdana'
+          paragrafos[i].style.fontSize = '12pt'
+          paragrafos[i].style.color = 'white'
+          paragrafos[i].style.textAlign = 'justify'
+        }
+      }
+
+      redimensionar = function(t) {
+        document.getElementById('sonic').style.width = `${t}%`
+        document.getElementById('sonic').style.height = `${t}%`
+      }
+    </script>
+  </body>
+</html>
