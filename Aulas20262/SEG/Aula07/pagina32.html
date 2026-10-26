@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 31</title>
+  </head>
+
+  <body>
+    <fieldset>
+      <label for="dimensao">Dimensão da Imagem</label>
+      <input type="range" id="dimensao" min="10" max="100" value="50" oninput="redimensionar(this.value)">
+    </fieldset>
+
+    <h1>Método getElementsByTagName()</h1>  
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quod earum commodi eum adipisci rem nisi esse accusantium ipsam nam voluptatibus soluta ipsum maiores unde a molestiae nesciunt, corporis deleniti.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quod earum commodi eum adipisci rem nisi esse accusantium ipsam nam voluptatibus soluta ipsum maiores unde a molestiae nesciunt, corporis deleniti.</p>
+
+    <p><img src="Sonic.png"></p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quod earum commodi eum adipisci rem nisi esse accusantium ipsam nam voluptatibus soluta ipsum maiores unde a molestiae nesciunt, corporis deleniti.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quod earum commodi eum adipisci rem nisi esse accusantium ipsam nam voluptatibus soluta ipsum maiores unde a molestiae nesciunt, corporis deleniti.</p>
+
+    <script>
+      let paragrafos = document.getElementsByTagName('p')
+      let titulo = document.getElementsByTagName('h1')
+      let imagem = document.getElementsByTagName('img')
+
+      for(let i = 0; i < paragrafos.length; i++) {
+        paragrafos[i].style.fontFamily = 'verdana'
+        paragrafos[i].style.fontSize = '12pt'
+        paragrafos[i].style.textAlign = 'justify'
+        paragrafos[i].style.color = 'darkblue'
+      }
+
+      titulo[0].style.color = 'gray'
+      titulo[0].style.fontFamily = 'verdana'
+      titulo[0].style.fontWeight = 'normal'
+
+      imagem[0].style.width = '480px'
+      imagem[0].style.height = '161px'
+
+      redimensionar = function(d) {
+        imagem[0].style.width = `${d}%`
+        imagem[0].style.height = `${d}%`
+      }
+    </script>
+  </body>
+</html>
