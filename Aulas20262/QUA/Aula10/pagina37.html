@@ -1,1 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 37</title>
+  </head>
 
+  <body>
+    <h1>Métodos getElementsByName e getElementsByClassName</h1>
+
+    <p name="paragrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, dicta, natus fugit praesentium, at quaerat beatae vitae quisquam assumenda nostrum recusandae. Consectetur ipsa, at dolorum in placeat illum tenetur dolorem.</p>
+
+    <p class="paragrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, dicta, natus fugit praesentium, at quaerat beatae vitae quisquam assumenda nostrum recusandae. Consectetur ipsa, at dolorum in placeat illum tenetur dolorem.</p>
+
+    <p name="paragrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, dicta, natus fugit praesentium, at quaerat beatae vitae quisquam assumenda nostrum recusandae. Consectetur ipsa, at dolorum in placeat illum tenetur dolorem.</p>
+
+    <p class="paragrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, dicta, natus fugit praesentium, at quaerat beatae vitae quisquam assumenda nostrum recusandae. Consectetur ipsa, at dolorum in placeat illum tenetur dolorem.</p>
+
+    <p name="paragrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, dicta, natus fugit praesentium, at quaerat beatae vitae quisquam assumenda nostrum recusandae. Consectetur ipsa, at dolorum in placeat illum tenetur dolorem.</p>
+
+    <p class="paragrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, dicta, natus fugit praesentium, at quaerat beatae vitae quisquam assumenda nostrum recusandae. Consectetur ipsa, at dolorum in placeat illum tenetur dolorem.</p>
+
+    <script>
+      let paragrafos1 = document.getElementsByName('paragrafo')
+      let paragrafos2 = document.getElementsByClassName('paragrafo')
+      let titulo = document.getElementsByTagName('h1')
+
+      for(let i = 0; i < paragrafos1.length; i++) {
+        paragrafos1[i].style.fontFamily = 'Courier New'
+        paragrafos1[i].style.color = 'red'
+        paragrafos1[i].style.textAlign = 'justify'
+        paragrafos1[i].style.fontWeight = 'bold'
+      }
+
+      for(let i = 0; i < paragrafos2.length; i++) {
+        paragrafos2[i].style.fontFamily = 'Comic Sans Ms'
+        paragrafos2[i].style.color = 'blue'
+        paragrafos2[i].style.textAlign = 'center'
+        paragrafos2[i].style.fontStyle = 'italic'
+      }
+
+      titulo[0].style.fontFamily = 'verdana'
+      titulo[0].style.fontSize = '18pt'
+      titulo[0].style.fontWeight = 'normal'
+    </script>
+  </body>
+</html>

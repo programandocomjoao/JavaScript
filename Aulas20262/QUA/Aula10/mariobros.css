@@ -1,0 +1,22 @@
+body {
+  font-family: verdana;
+  background-color: silver;
+}
+
+div#ferramentas, div#conteudo {
+  background-color: white;
+  width: 90%;
+  padding: 20px;
+  border: black 1px solid;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+h1#titulo {
+  color: #666666;
+  font-weight: normal;
+}
+
+p.paragrafo {
+  text-align: justify;
+}
