@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 42</title>
+    <link rel="stylesheet" href="estilos42.css">
+  </head>
 
+  <body>
+    <h1>Carrossel</h1>  
+
+    <div id="carrossel">
+      <input type="button" value=" < " class="botao" onclick="voltar()">
+      <input type="button" value=" > " class="botao" onclick="avancar()">
+    </div>
+
+    <script>
+      let fotos = new Array('s1.jpg', 's2.jpg', 's3.jpg', 's4.jpg', 's5.jpg')
+      let i = 0
+      let c = document.getElementById('carrossel')
+
+      c.style.backgroundImage = `url(${fotos[i]})`
+
+      trocar = function() {
+        c.style.backgroundImage = `url(${fotos[i]})`
+        i++
+
+        if(i == fotos.length)
+          i = 0
+      }
+
+      setInterval('trocar()', 3000)
+
+      avancar = function() {
+        i++
+        if(i == fotos.length)
+          i = 0
+
+        c.style.backgroundImage = `url(${fotos[i]})`
+      }
+
+      voltar = function() {
+        i--
+        if(i == -1)
+          i = fotos.length - 1
+
+        c.style.backgroundImage = `url(${fotos[i]})`
+      }
+    </script>
+  </body>
+</html>

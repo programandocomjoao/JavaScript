@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 39</title>
+  </head>
+
+  <body>
+    <h1 id="titulo">Eventos do Mouse</h1>  
+
+    <p id="paragrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia cum officiis pariatur itaque iure alias, ratione ea nulla vero consequuntur assumenda facere, animi culpa autem excepturi in obcaecati nostrum delectus.</p>
+
+    <script>
+      let p = document.querySelector('#paragrafo')
+
+      descriptografar = function() {
+        p.innerText = 'Se não houver frutos, valeu a beleza das flores. Se não houver flores, valeu a sombra das folhas. Se não houver folhas, valeu a intenção da semente. (Henfil)'
+      }
+
+      p.addEventListener('mouseenter', descriptografar)
+
+      criptografar = function() {
+        p.innerText = 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia cum officiis pariatur itaque iure alias, ratione ea nulla vero consequuntur assumenda facere, animi culpa autem excepturi in obcaecati nostrum delectus.'
+      }
+
+      p.addEventListener('mouseout', criptografar)
+
+      apagar = function() {
+        p.innerText = ''
+      }
+
+      p.addEventListener('click', apagar)
+    </script>
+  </body>
+</html>
